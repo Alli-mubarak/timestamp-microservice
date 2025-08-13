@@ -19,7 +19,7 @@ let output = {unix:Date.parse(d),utc:d};
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(__dirname + '/index.html');
   // res.json(`{unix:${Date.parse(d)},utc:'${d}'}`);
 });
 
@@ -68,3 +68,4 @@ app.get("/api/",(req, res)=>{
 var listener = app.listen(process.env.PORT || 3000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
+
